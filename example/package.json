@@ -1,0 +1,29 @@
+{
+  "name": "rag-try",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/rag.js",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_OPTIONS='--loader ts-node/esm --experimental-specifier-resolution=node' ts-node src/rag.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/google-genai": "^0.0.7",
+    "@qdrant/js-client-rest": "^1.7.0",
+    "@types/node": "^22.10.7",
+    "groq-sdk": "^0.3.0",
+    "langchain": "^0.1.11",
+    "rag-module": "^1.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifiers": true,
+    "transpileOnly": true
+  }
+}
